@@ -1775,3 +1775,10 @@ hr.star-primary:after {
 .hidden-div { 
   display: none; 
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+  .section-mini-hero {
+      margin-top: 55px;
+  }
+}
