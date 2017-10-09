@@ -2030,6 +2030,12 @@ hr.star-primary {
 
   .about-picture {
     background: url(../img/fullsize.png) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fullsize.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fullsize.png', sizingMethod='scale')";
     height: 200px;
   }
 }
@@ -2037,6 +2043,12 @@ hr.star-primary {
 @media screen and (min-width: 768px) {
   .about-picture {
     background: url(../img/fullsize.png) no-repeat center top;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fullsize.png', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/fullsize.png', sizingMethod='scale')";
     height: 100%;
   }
 
@@ -2045,46 +2057,13 @@ hr.star-primary {
   }
 }
 
-/* Portrait and Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (-webkit-min-device-pixel-ratio: 1) {
-  .about-picture {
-    background: url(../img/fullsize.png) no-repeat center top;
-    height: 100%;
-  }
-
-  .flex-display {
-    display: flex;
-  }
-}
-
-/* Portrait */
-@media only screen 
-and (min-device-width: 768px) 
-and (orientation: portrait) 
-and (-webkit-min-device-pixel-ratio: 1) {
-  .about-picture {
-    background: url(../img/fullsize.png) no-repeat center top;
-    height: 100%;
-  }
-
-  .flex-display {
-    display: flex;
-  }
-}
-
-/* Landscape */
-@media only screen 
-and (min-device-width: 768px) 
-and (orientation: landscape) 
-and (-webkit-min-device-pixel-ratio: 1) {
-  .about-picture {
-    background: url(../img/fullsize.png) no-repeat center top;
-    height: 100%;
-  }
-
-  .flex-display {
-    display: flex;
-  }
+#hero1, .black-bg{
+  background: #212121;
+  background: -moz-linear-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
+  background: -webkit-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
+  background: -webkit-linear-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
+  background: -o-linear-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
+  background: -ms-linear-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
+  background: linear-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#434343', GradientType=1 );
 }
