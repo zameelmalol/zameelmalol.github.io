@@ -41,7 +41,7 @@
 				<!-- Navbar Header -->
 				<div class="navbar-header">
 					<!-- Collapse Button -->
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+					<button type="button" id="navbar-id" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 						<i class="fa fa-bars white-color"></i>
 					</button>
 					<!-- /Collapse Button -->
@@ -1434,8 +1434,9 @@
 
 	<script>
 		// https://stackoverflow.com/questions/13244939/javascript-to-output-text-based-on-users-current-time
-		var today = new Date()
-		var curHr = today.getHours()
+		var today = new Date();
+		var curHr = today.getHours();
+		var scrolled = false;
 
 		if (curHr < 12) {
 			$('.time-title').text('Hey, Good Morning!');
@@ -1449,6 +1450,36 @@
 		setTimeout(function () {
 			$('.section-mini-hero .container').removeClass('hidden-div');
 		}, 500);
+
+		// <button type="button" id="navbar-id" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" onclick="anchorHeight()">
+
+		// $(window).scroll(function(){
+		// 	var scrolled = true;
+		// });
+		
+		// function anchorHeight() {
+		// 	if ($(window).width() <= 767) {
+		// 	}
+
+		// 	if ($(window).width() <= 768) {
+		// 	}
+
+		// 	if (!$("#navbar-id").hasClass("collapsed")) {
+		// 		$(".anchor").css("height", "0");
+		// 	}
+		// 	if ($("#navbar-id").hasClass("collapsed")) {
+		// 		$(".anchor").css("height", "0px");
+		// 	}
+	    // }
+		
+		// $('.navbar-nav li a').click(function(){
+		// 	if ($("#navbar-id").hasClass("collapsed")) {
+		// 		$(".anchor").css("height", "45px");
+		// 	}
+		// 	if (!$("#navbar-id").hasClass("collapsed")) {
+		// 		$(".anchor").css("height", "150px");
+		// 	}
+		// });
 	</script>
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
