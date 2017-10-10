@@ -2067,3 +2067,17 @@ hr.star-primary {
   background: linear-gradient(to left,rgb(0, 0, 0), rgb(67, 67, 67)); 
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#434343', GradientType=1 );
 }
+ 
+/* #colorful-heading{
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotateX(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateX(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateX(360deg); transform:rotateX(360deg); } } */
+
+#colorful-heading a{
+text-decoration: none;
+}
